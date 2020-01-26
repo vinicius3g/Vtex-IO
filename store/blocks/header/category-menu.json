@@ -1,108 +1,111 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-colection",
+      "menu-item#category-clothes",
+      "menu-item#category-acessorios",
+      "menu-item#category-campanha",
+      "menu-item#category-exclusividade",
+      "menu-item#category-sales"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#category-colection": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-category-colection",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/colection---accessories/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Coleção",
+        "text": "Coleção"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#category-colection"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#category-colection": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#category-colection"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#category-colection": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-colection-clothing",
+      "menu-item#category-colection-accessories",
+      "menu-item#category-colection-eyeglasses"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#category-colection-clothing": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-category-colection-clothing",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/colection---accessories/clothing/",
         "noFollow": false,
         "tagTitle": "Clothing",
         "text": "Clothing"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#category-colection-accessories": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-category-colection-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/colection---accessories/accessories/",
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#category-colection-eyeglasses": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-category-colection-eyeglasses",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/colection---accessories/eyeglasses/",
         "noFollow": false,
         "tagTitle": "Eyeglasses",
         "text": "Eyeglasses"
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#category-clothes": {
     "props": {
-      "id": "menu-item-category-home",
+      "id": "menu-item-category-clothes",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/clothes---decor/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Roupas",
+        "text": "Roupas"
       }
     }
   },
-  "menu-item#more": {
+  "menu-item#category-acessorios": {
     "props": {
       "id": "menu-item-custom-sale",
       "type": "custom",
@@ -112,39 +115,39 @@
         "type": "internal",
         "href": "#",
         "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "tagTitle": "acessorios",
+        "text": "Acessorios"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#more"
+      "vtex.menu@2.x:submenu#acessorios"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
+  "vtex.menu@2.x:submenu#acessorios": {
     "props": {
       "width": "100%"
     },
     "children": [
-      "flex-layout.row#menu-more"
+      "flex-layout.row#menu-acessorios"
     ]
   },
-  "flex-layout.row#menu-more": {
+  "flex-layout.row#menu-acessorios": {
     "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
+      "flex-layout.col#menu-acessorios-1",
+      "flex-layout.col#menu-acessorios-2"
     ]
   },
-  "flex-layout.col#menu-more-1": {
+  "flex-layout.col#menu-acessorios-1": {
     "children": [
-      "vtex.menu@2.x:menu#more"
+      "vtex.menu@2.x:menu#acessorios"
     ]
   },
-  "flex-layout.col#menu-more-2": {
+  "flex-layout.col#menu-acessorios-2": {
     "children": [
       "info-card#home"
     ]
   },
-  "vtex.menu@2.x:menu#more": {
+  "vtex.menu@2.x:menu#acessorios": {
     "props": {
       "orientation": "vertical"
     },
@@ -166,5 +169,50 @@
         "text": "About us"
       }
     }
-  }
-}
+  },
+  "menu-item#category-campanha":{
+    "props":{
+      "id": "menu-item-custom-campanha",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Campanhas",
+          "text": "Campanhas"
+      }  
+    }
+  },
+  "menu-item#category-exclusividade":{
+      "props":{
+        "id": "menu-item-custom-campanha",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "Exclusividade",
+            "text": "Exclusividade"
+        }  
+      }
+    },
+  "menu-item#category-sales":{
+      "props":{
+        "id": "menu-item-custom-campanha",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": true,
+            "tagTitle": "Sales",
+            "text": "Sales"
+        }  
+      }
+    }
+} 
