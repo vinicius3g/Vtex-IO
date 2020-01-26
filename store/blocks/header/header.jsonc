@@ -1,37 +1,43 @@
-{
+{//definição do layout de desktop e de mobile
   "header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  //nao entendi ainda
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+  //desktop blocks
   "header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
-      "header-row#2-desktop",
-      "header-row#3-desktop",
-      "header-row#4-desktop"
+      // "header-row#1-desktop",
+      "header-row#2-desktop",//notification bar
+      // "header-row#3-desktop",//menu com abaout e etc
+      "header-row#4-desktop"// menu com logo e search
     ]
   },
-
+// ainda nao sei 
   "header-row#1-desktop": {
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
     }
   },
-
+// começo do notification.bar
   "header-row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": [
+      "notification.bar#notification"
+    ],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "notification.bar#notification": {
     "props": {
-      "content": "1ª Troca Grátis Até   |6x sem juros |   Desconto na 1ª compra"
+      "content":"1ª Troca Grátis | Até 6x sem juros Desconto | na 1ª compra"
     }
   },
+//fim notification.bar
+//começo do menu  com about etc
   "header-row#3-desktop": {
     "children": [
       "vtex.menu@2.x:menu#websites",
@@ -43,13 +49,16 @@
       "inverted": "true"
     }
   },
+  //começo menu do logo e search
   "header-row#4-desktop": {
+    ///definiçao dos filhos desse block
+    //todos sao mostrados  na sequencia em que sao montados em row da esquerda para direita
     "children": [
       "logo#desktop",
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
       "header-spacer",
-      "search-bar",
+      "logo#desktop1",
       "locale-switcher",
       "login",
       "minicart.v2"
@@ -59,14 +68,26 @@
       "blockClass": "main-header"
     }
   },
+  //definição do logo
   "logo#desktop": {
     "props": {
+      "id": "logo-initial",
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "/arquivos/logo-preta@3x.png",
       "width": "180"
     }
   },
+  "logo#desktop1": {
+    "props": {
+      "title": "LogoSearch",
+      "href": "/",
+      "url": "/arquivos/icone-busca@3x.png",
+      "width": "180"
+    }
+  },
+  //fim menu search
+  // blocks  mobile
   "header-layout.mobile": {
     "children": ["header-row#1-mobile"]
   },
@@ -89,9 +110,12 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-colection",
+      "menu-item#category-clothes",
+      "menu-item#category-acessorios",
+      "menu-item#category-campanha",
+      "menu-item#category-exclusividade",
+      "menu-item#category-sales"
     ],
     "props": {
       "orientation": "vertical"
