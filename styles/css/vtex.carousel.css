@@ -5,3 +5,24 @@
 .containerImg .img {
   max-width: 1520px;
 }
+.arrowLeft {
+  background-color: #ffffff6e;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    margin-left: 17%;
+}
+.arrowRight {
+  background-color: #ffffff6e;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    margin-right: 17%;
+}
+.sliderFrame{
+  height: 400px;
+}
