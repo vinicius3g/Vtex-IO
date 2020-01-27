@@ -1,11 +1,11 @@
-.notificationBarContainer {
+/* .notificationBarContainer {
   background-color: #000;
   color: #fff;
   font-size: 13px;
   text-decoration: none;
   font-family: Montserrat;
   line-height: 1.38;
-}
+} */
 
 .searchBarContainer {
   max-width: 265px;
@@ -69,18 +69,31 @@
 .skuSelectorContainer {
   margin: 1rem 0;
 }
-.logoLink .logoContainer .logoImage{
-  margin-left: 17%;
-  
-}
-.logoContainer .logoImage{
+
+.logoImage--logo-header{
   width: 140px;
+  height: 23px;
+  margin-left: 17%;
+}
+
+.logoImage--search-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.logoImage--login-icon{
+  width: 23px;
   height: 23px;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group){
   border: none;
   border-bottom: 1px solid #000;
+}
+
+.logoImage--bag-icon{
+  width: 18px;
+  height: 23px;
 }
 
 @media only screen and (min-width: 640px) {
