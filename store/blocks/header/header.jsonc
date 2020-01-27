@@ -25,15 +25,20 @@
 // começo do notification.bar
   "header-row#2-desktop": {
     "children": [
-      "notification.bar#notification"
+      "rich-text#notification"
     ],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#notification": {
+  "rich-text#notification": {
     "props": {
-      "content":"1ª Troca Grátis | Até 6x sem juros Desconto | na 1ª compra"
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "1ª Troca Grátis |  Até 6x sem juros | Desconto na 1ª compra",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "top-message"
     }
   },
 //fim notification.bar
@@ -58,10 +63,13 @@
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
       "header-spacer",
-      "logo#desktop1",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "logo#desktop-search",
+      "logo#desktop-login",
+      "login#dektop-login-1",
+      "logo#desktop-bag",
+      "locale-switcher"
+      // "login",
+      // "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -75,15 +83,54 @@
       "title": "Logo",
       "href": "/",
       "url": "/arquivos/logo-preta@3x.png",
-      "width": "180"
+      "width": "180",
+      "blockClass":"logo-header"
     }
   },
-  "logo#desktop1": {
+  //logo de search
+  "logo#desktop-search": {
     "props": {
       "title": "LogoSearch",
       "href": "/",
-      "url": "/arquivos/icone-busca@3x.png",
-      "width": "180"
+      "url": "/arquivos/icone-busca@2x.png",
+      "width": "180",
+      "blockClass":"search-icon"
+    }
+  },
+  "rich-text#search":{
+    "props":{
+      "text": "Busca"
+    }
+},
+//logo login
+  "logo#desktop-login": {
+    "props": {
+      "title": "LogoLogin",
+      "href": "/",
+      "url": "/arquivos/flor@2x.png",
+      "width": "180",
+      "blockClass":"login-icon"
+    }
+  },
+  "login#dektop-login-1": {
+    "props": {
+      "iconLabel":"",
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Faça seu login ou cadastre-se",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass":"btn-login"
+    }
+  },
+  //logo sacola
+  "logo#desktop-bag": {
+    "props": {
+      "title": "LogoBag",
+      "href": "/",
+      "url": "/arquivos/sacola@2x.png",
+      "width": "180",
+      "blockClass":"bag-icon"
     }
   },
   //fim menu search
