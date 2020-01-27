@@ -35,3 +35,9 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+.flexRowContent--footer-1 {
+  align-content: center;
+}
+.flexRow--menu-footer{
+  display: flex;
+}
