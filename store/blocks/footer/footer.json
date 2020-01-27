@@ -6,25 +6,22 @@
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-3-desktop",
+      "accepted-payment-methods"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
+    "children": ["rich-text#footer-top"],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer-1"
     }
   },
-
+  "rich-text#footer-top": {
+    "props": {
+      "text": "Cadastre-se agora e ganhe 10% OFF em produtos da nova coleção.",
+      "blockClass": "footer-1"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
@@ -47,8 +44,36 @@
       ]
     }
   },
-
-  "flex-layout.row#footer-2-desktop": {
+  "flex-layout.row#footer-2-desktop":{
+    "children":[
+      "search-bar#footer-search",
+      "social-networks"
+    ],
+    "props":{
+      "paddingTop":"7",
+      "blockClass":"footer-1"
+    }
+  },
+  "search-bar#footer-search":{
+    "props": {
+      "area": "one",
+      "horizontalAlignment": "left",
+      "placeHolder":"Digite seu e-mail",
+      "blockClass":"footer-input"
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products",
+      "footer-spacer"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.row#footer--desktop": {
     "children": ["accepted-payment-methods"],
     "props": {
       "blockClass": "payment-methods"
@@ -56,23 +81,10 @@
   },
   "accepted-payment-methods": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"],
+      "blockClass":"payments-footer"
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
-
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
