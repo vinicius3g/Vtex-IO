@@ -1,16 +1,17 @@
 {
   "vtex.menu@2.x:menu#Products": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "horizontal"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "menu-item#marca",
+      "menu-item#institucional",
+      "menu-item#atendimento",
+      "menu-item#politicas",
+      "menu-item#nossas-lojas"
     ]
   },
-  "menu-item#news": {
+  "menu-item#marca": {
     "props": {
       "id": "menu-item-news",
       "type": "custom",
@@ -20,14 +21,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "A Marca",
+        "text": "A Marca"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#institucional": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-news",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -35,14 +36,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Institucional",
+        "text": "Institucional"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#atendimento": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-news",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -50,14 +51,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#politicas": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-news",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -65,144 +66,27 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Politicas",
+        "text": "Politicas"
       }
     }
   },
-
-  "vtex.menu@2.x:menu#footer-decoration": {
+  "menu-item#nossas-lojas": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
-  },
-
-  "menu-item#smartphones": {
-    "props": {
-      "id": "menu-item-smartphones",
+      "id": "menu-item-news",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/decoration/smartphones",
-        "noFollow": true,
-        "tagTitle": "Smartphones",
-        "text": "Smartphones"
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Nossas Lojas",
+        "text": "Nossas Lojas"
       }
     }
   },
-
-  "menu-item#videogames": {
-    "props": {
-      "id": "menu-item-videogames",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/videogames",
-        "noFollow": true,
-        "tagTitle": "Videogames",
-        "text": "Videogames"
-      }
-    }
-  },
-
-  "menu-item#tvs": {
-    "props": {
-      "id": "menu-item-tvs",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/decoration/tvs",
-        "noFollow": true,
-        "tagTitle": "TVs",
-        "text": "TVs"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-bags": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#bags",
-      "menu-item#backpacks",
-      "menu-item#necessaire"
-    ]
-  },
-
-  "menu-item#bags": {
-    "props": {
-      "id": "menu-item-bags",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/d",
-        "noFollow": true,
-        "tagTitle": "Bags",
-        "text": "Bags"
-      }
-    }
-  },
-
-  "menu-item#backpacks": {
-    "props": {
-      "id": "menu-item-backpacks",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/backpacks",
-        "noFollow": true,
-        "tagTitle": "Backpacks",
-        "text": "Backpacks"
-      }
-    }
-  },
-
-  "menu-item#necessaire": {
-    "props": {
-      "id": "menu-item-necessaire",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/bags/necessaire",
-        "noFollow": true,
-        "tagTitle": "Necessaire",
-        "text": "Necessaire"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#footer-clothing": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
-    ]
-  },
-
+  
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
@@ -265,9 +149,6 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
     ]
   },
 
@@ -289,9 +170,6 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
     ]
   },
 
