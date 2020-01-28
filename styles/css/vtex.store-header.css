@@ -1,3 +1,7 @@
+:global(.vtex-render-runtime-8-x-loadingBarAnimation){
+  background-color:#f71963;
+}
+
 .headerRow--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
@@ -16,7 +20,7 @@
   font-size: 14px;
   width: 57px;
   height: 14px;
-  font-family: Montserrat;
+  font-family: 'Montserrat',sans-serif;
   font-weight: 600;
 }
 
@@ -24,3 +28,4 @@
   padding: 10px 0px;
   background-color: #F0F0F0;
 }
+
