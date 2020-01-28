@@ -76,8 +76,6 @@
 .container--footer-text{
   display: flex;
   justify-content: center;
-}
-.container--footer-text{
   text-align: center;
   font-size: 11px;
   color: #000;
