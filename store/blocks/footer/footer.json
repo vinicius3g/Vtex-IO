@@ -7,7 +7,8 @@
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop",
-      "accepted-payment-methods"
+      "accepted-payment-methods",
+      "flex-layout.row#footer-5-rich-text"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
@@ -64,8 +65,7 @@
   },
   "flex-layout.row#footer-3-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "footer-spacer"
+      "vtex.menu@2.x:menu#Products"
     ],
     "props": {
       "blockClass": "menu-footer",
@@ -83,6 +83,20 @@
     "props": {
       "paymentMethods": ["MasterCard", "Visa", "Diners Club"],
       "blockClass":"payments-footer"
+    }
+  },
+  "flex-layout.row#footer-5-rich-text":{
+    "children":[
+      "rich-text#footer-text"
+    ],
+    "props":{
+      "blockClass":"footer-text"
+    }
+  },
+  "rich-text#footer-text":{
+    "props":{
+      "text":"Renata Yu Yin Wang - EPP / CNPJ: 15.625.506/0002-44 / Inscrição Estadual: 145.348.958.116 Endereço: Av. Regente Feijó, 1739, loja 146 - Vila Regente Feijó - São Paulo, SP - 03342-000 \n © TODOS OS DIREITOS RESERVADOS. Eventuais promoções, descontos e prazos de pagamento expostos aqui são válidos apenas para compras via internet. \n As fotos, textos e layout aqui veiculados são de propriedade da Loja. É proibida a utilização total ou parcial sem nossa autorização.",
+      "blockClass":"footer-text"
     }
   },
   "footer-layout.mobile": {

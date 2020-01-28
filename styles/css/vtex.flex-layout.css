@@ -41,3 +41,6 @@
 .flexRow--menu-footer{
   display: flex;
 }
+.stretchChildrenWidth {
+  justify-content: flex-end;
+}

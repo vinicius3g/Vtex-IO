@@ -89,7 +89,7 @@
   
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "horizontal"
     },
     "children": [
       "menu-item#clothing-mobile",
