@@ -13,13 +13,13 @@
   },
   "menu-item#marca": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-footer-text",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/marca/",
         "noFollow": false,
         "tagTitle": "A Marca",
         "text": "A Marca"
@@ -28,13 +28,13 @@
   },
   "menu-item#institucional": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-footer-text",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/institucional/",
         "noFollow": false,
         "tagTitle": "Institucional",
         "text": "Institucional"
@@ -43,13 +43,13 @@
   },
   "menu-item#atendimento": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-footer-text",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/atendimento/",
         "noFollow": false,
         "tagTitle": "Atendimento",
         "text": "Atendimento"
@@ -58,13 +58,13 @@
   },
   "menu-item#politicas": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-footer-text",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/politicas/",
         "noFollow": false,
         "tagTitle": "Politicas",
         "text": "Politicas"
@@ -73,13 +73,13 @@
   },
   "menu-item#nossas-lojas": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-footer-text",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/lojas/",
         "noFollow": false,
         "tagTitle": "Nossas Lojas",
         "text": "Nossas Lojas"
