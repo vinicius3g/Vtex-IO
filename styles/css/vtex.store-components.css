@@ -89,6 +89,7 @@
 .searchBarContainer :global(.vtex-input-prefix__group){
   border: none;
   border-bottom: 1px solid #000;
+  width: 316px;
 }
 .logoImage--bag-icon{
   width: 18px;
