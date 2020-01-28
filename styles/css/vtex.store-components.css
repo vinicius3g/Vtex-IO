@@ -86,10 +86,61 @@
   height: 23px;
 }
 
+.searchBarContainer :global(.vtex-input-prefix__group){
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 316px;
+}
 .logoImage--bag-icon{
   width: 18px;
   height: 23px;
 }
+
+.logoImage--bag-icon{
+  width: 18px;
+  height: 23px;
+}
+
+.logoImage--visa-card-footer{
+  width: 50px;
+  height: 16px;
+}
+
+.logoImage--master-card-footer{
+  width: 32px;
+  height: 26px;
+}
+
+.logoImage--elo-card-footer{
+  width: 39px;
+  height: 20px;
+}
+
+.logoImage--diners-card-footer{
+  width: 29px;
+  height: 25px;
+}
+
+.logoImage--american-card-footer{
+  width: 27px;
+  height: 26px;
+}
+
+.logoImage--icone-acupula{
+  width: 102px;
+  height: 25px;
+}
+
+.logoImage--icone-tray{
+  width: 56px;
+  height: 33px;
+}
+
+.logoLink--icone-acupula{
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;

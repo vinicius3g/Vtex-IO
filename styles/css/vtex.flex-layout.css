@@ -35,3 +35,17 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+.flexRowContent--footer-1 {
+  align-content: center;
+}
+.flexRow--menu-footer{
+  display: flex;
+}
+.stretchChildrenWidth {
+  justify-content: flex-end;
+}
+
+.flexRow--payment-methods{
+  margin: 0 auto; 
+  display: flex
+}

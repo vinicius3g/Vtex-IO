@@ -6,25 +6,24 @@
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop",
+      "flex-layout.row#footer-5-rich-text",
+      "flex-layout.row#footer-6-desktop"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
+    "children": ["rich-text#footer-top"],
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer-1"
     }
   },
-
+  "rich-text#footer-top": {
+    "props": {
+      "text": "Cadastre-se agora e ganhe 10% OFF em produtos da nova coleção.",
+      "blockClass": "footer-1"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
@@ -47,32 +46,133 @@
       ]
     }
   },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+  "flex-layout.row#footer-2-desktop":{
+    "children":[
+      "search-bar#footer-search",
+      "social-networks"
+    ],
+    "props":{
+      "paddingTop":"7",
+      "blockClass":"footer-1"
+    }
+  },
+  "search-bar#footer-search":{
+    "props": {
+      "area": "one",
+      "horizontalAlignment": "left",
+      "placeHolder":"Digite seu e-mail",
+      "blockClass":"footer-input"
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#Products"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+  "flex-layout.row#footer-4-desktop": {
+    "children": [
+      "logo#cards-footer-1",
+      "logo#cards-footer-2",
+      "logo#cards-footer-3",
+      "logo#cards-footer-4",
+      "logo#cards-footer-5"
+    ],
     "props": {
       "blockClass": "payment-methods"
     }
   },
-  "accepted-payment-methods": {
+  "logo#cards-footer-1": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "id":"visa-card",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-visa@2x.png",
+      "width": "180",
+      "blockClass":"visa-card-footer"
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+  "logo#cards-footer-2": {
     "props": {
-      "blockClass": "credits"
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-master@2x.png",
+      "width": "180",
+      "blockClass":"master-card-footer"
     }
   },
-  "rich-text#footer": {
+  "logo#cards-footer-3": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-elo@2x.png",
+      "width": "180",
+      "blockClass":"elo-card-footer"
     }
   },
-
+  "logo#cards-footer-4": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-diners@2x.png",
+      "width": "180",
+      "blockClass":"diners-card-footer"
+    }
+  },
+  "logo#cards-footer-5": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-american@2x.png",
+      "width": "180",
+      "blockClass":"american-card-footer"
+    }
+  },
+  "flex-layout.row#footer-5-rich-text":{
+    "children":[
+      "rich-text#footer-text"
+    ],
+    "props":{
+      "blockClass":"footer-text"
+    }
+  },
+  "rich-text#footer-text":{
+    "props":{
+      "text":"Renata Yu Yin Wang - EPP / CNPJ: 15.625.506/0002-44 / Inscrição Estadual: 145.348.958.116 Endereço: Av. Regente Feijó, 1739, loja 146 - Vila Regente Feijó - São Paulo, SP - 03342-000 \n © TODOS OS DIREITOS RESERVADOS. Eventuais promoções, descontos e prazos de pagamento expostos aqui são válidos apenas para compras via internet. \n As fotos, textos e layout aqui veiculados são de propriedade da Loja. É proibida a utilização total ou parcial sem nossa autorização.",
+      "blockClass":"footer-text"
+    }
+  },
+  "flex-layout.row#footer-6-desktop":{
+    "children":[
+      "logo#end-footer-1",
+      "logo#end-footer-2"
+    ],
+    "props":{
+      "blockClass":"end-footer"
+    }
+  },
+  "logo#end-footer-1":{
+    "props": {
+    "title": "Logo",
+    "href": "/",
+    "url": "/arquivos/icone-acupula@2x.png",
+    "width": "180",
+    "blockClass":"icone-acupula"
+    }
+  },
+  "logo#end-footer-2":{
+    "props": {
+    "title": "Logo",
+    "href": "/",
+    "url": "/arquivos/VTEX_pink_trademark_CMYK.png",
+    "width": "180",
+    "blockClass":"icone-tray"
+    }
+  },
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",
