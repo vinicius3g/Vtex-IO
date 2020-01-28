@@ -35,7 +35,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "1ª Troca Grátis |  Até 6x sem juros | Desconto na 1ª compra",
+      "text": "1ª Troca Grátis &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;  Até 6x sem juros &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Desconto na 1ª compra",
       "textColor": "c-on-emphasis",
       "font": "t-heading-5",
       "blockClass": "top-message"
