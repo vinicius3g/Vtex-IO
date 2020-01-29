@@ -90,6 +90,7 @@
   border: none;
   border-bottom: 1px solid #000;
   width: 316px;
+  border-radius: 0;
 }
 .logoImage--bag-icon{
   width: 18px;
@@ -99,6 +100,26 @@
 .logoImage--bag-icon{
   width: 18px;
   height: 23px;
+}
+
+.logoImage--logo-fecebook{
+  width: 11px;
+  height: 21px;
+}
+
+.logoImage--logo-instagram{
+  width: 21px;
+  height: 21px;
+}
+
+.logoImage--logo-pintrest{
+  width: 21px;
+  height: 21px;
+}
+
+.logoImage--logo-spotify{
+  width: 44px;
+  height: 33px;
 }
 
 .logoImage--visa-card-footer{
@@ -139,6 +160,21 @@
 .logoLink--icone-acupula{
   display: flex;
   justify-content: flex-end;
+}
+
+.searchBarIcon--footer-input{
+  visibility: hidden;
+}
+:global(.vtex-input__prefix ){
+  width: 22px;
+}
+
+.searchBarIcon--footer-input::before{
+  visibility: visible;
+  content: "";
+  background:url("/arquivos/icone-enviar@2x.png");
+  width: 22px;
+  height: 16px;
 }
 
 @media only screen and (min-width: 640px) {
