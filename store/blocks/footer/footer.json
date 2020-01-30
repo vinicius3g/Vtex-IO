@@ -24,32 +24,11 @@
       "blockClass": "footer-1"
     }
   },
-  "social-networks": {
-    "props": {
-      "socialNetworks": [
-        {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
-        },
-        {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
-        },
-        {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
-        },
-        {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
-        }
-      ]
-    }
-  },
+
   "flex-layout.row#footer-2-desktop":{
     "children":[
       "search-bar#footer-search",
-      "social-networks"
+      "flex-layout.row#logo-social-media"
     ],
     "props":{
       "paddingTop":"7",
@@ -64,6 +43,58 @@
       "blockClass":"footer-input"
     }
   },
+  "flex-layout.row#logo-social-media":{
+    "children":[
+      "logo#social-media-facebook",
+      "logo#social-media-instagram",
+      "logo#social-media-pintrest",
+      "logo#social-media-spotfy"
+    ],
+    "props":{
+      "blockClass":"social-midias-footer"
+    }
+  },
+  "logo#social-media-facebook": {
+    "props": {
+      "id":"logo-fecebook",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/facebook@2x.png",
+      "width": "180",
+      "blockClass":"logo-fecebook"
+    }
+  },
+  "logo#social-media-instagram": {
+    "props": {
+      "id":"logo-instagram",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/instagram@2x.png",
+      "width": "180",
+      "blockClass":"logo-instagram"
+    }
+  },
+  "logo#social-media-pintrest": {
+    "props": {
+      "id":"logo-pintrest",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/580-b-57-fcd-9996-e-24-bc-43-c-52-e@2x.png",
+      "width": "180",
+      "blockClass":"logo-pintrest"
+    }
+  },
+  "logo#social-media-spotfy": {
+    "props": {
+      "id":"logo-spotify",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/camada-2@3x.png",
+      "width": "180",
+      "blockClass":"logo-spotify"
+    }
+  },
+
   "flex-layout.row#footer-3-desktop": {
     "children": [
       "vtex.menu@2.x:menu#Products"
@@ -170,7 +201,7 @@
     "href": "/",
     "url": "/arquivos/VTEX_pink_trademark_CMYK.png",
     "width": "180",
-    "blockClass":"icone-tray"
+    "blockClass":"icone-vtex"
     }
   },
   "footer-layout.mobile": {
