@@ -57,6 +57,33 @@
   font-weight: 700;
 }
 
+.container--footer-1{
+  justify-content: center;
+  width: 450px;
+  height: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.38;
+  font-weight: bold;
+  color: #000;
+}
+
+.container--top-message{
+  width: 100%;
+  background-color: #000;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 13px;
+}
+
+.container--footer-text{
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 11px;
+  color: #000;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

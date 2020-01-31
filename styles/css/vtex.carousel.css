@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 21px;
-    margin-left: 17%;
+    margin-left: 10%;
 }
 .arrowRight {
   background-color: #ffffff6e;
@@ -21,8 +21,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 21px;
-    margin-right: 17%;
+    margin-right: 10%;
 }
 .sliderFrame{
-  height: 400px;
+  height: 325px;
 }

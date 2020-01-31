@@ -35,3 +35,36 @@
 .flexCol--switcherMobileCol {
   width: 20%;
 }
+.flexRowContent--footer-1 {
+  align-content: center;
+}
+.flexRow--menu-footer{
+  display: flex;
+}
+.stretchChildrenWidth {
+  justify-content: flex-end;
+}
+
+.flexRow--payment-methods{
+  margin: 0 auto; 
+  display: flex
+}
+
+.flexRowContent--social-midias-footer{
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-left: 10%;
+  padding-top: 16px;
+}
+:global(.vtex-menu-2-x-styledLink){
+  font-family: 'Montserrat',sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.38;
+  text-align: center;
+  color: #000;
+}
+
+

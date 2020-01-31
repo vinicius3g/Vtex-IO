@@ -9,3 +9,13 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+.acceptedPaymentMethodContainer--payments-footer{
+  display: flex;
+  justify-content: center;
+}
+.socialNetworkWrapper{
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  margin-left: 100px;
+}
