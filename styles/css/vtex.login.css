@@ -1,0 +1,8 @@
+:global(.vtex-login-2-x-label){
+    visibility: hidden;
+}
+:global(.vtex-login-2-x-label)::before{
+    visibility: visible;
+    content: "";
+    background: url("/arquivos/flor@2x.png")no-repeat;
+}
