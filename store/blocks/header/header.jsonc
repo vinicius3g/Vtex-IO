@@ -60,13 +60,13 @@
     //todos sao mostrados  na sequencia em que sao montados em row da esquerda para direita
     "children": [
       "logo#desktop",
+      "header-spacer",
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
-      "header-spacer",
-      "logo#desktop-search",
-      "logo#desktop-login",
+      "image#desktop-search",
+      "image#desktop-login",
       "login#dektop-login-1",
-      "logo#desktop-bag",
+      "image#desktop-bag",
       "locale-switcher"
       // "login",
       // "minicart.v2"
@@ -88,31 +88,24 @@
     }
   },
   //logo de search
-  "logo#desktop-search": {
+  "image#desktop-search": {
     "props": {
-      "title": "LogoSearch",
-      "href": "/",
-      "url": "/arquivos/icone-busca@2x.png",
-      "width": "180",
-      "blockClass":"search-icon"
+      "src": "/arquivos/icone-busca@2x.png",
+      "alt":"icone de busca",
+      "maxHeight": 24,
+      "blockClass":"logo-search"
     }
   },
-  "rich-text#search":{
-    "props":{
-      "text": "Busca"
-    }
-},
 //logo login
-  "logo#desktop-login": {
-    "props": {
-      "title": "LogoLogin",
-      "href": "/",
-      "url": "/arquivos/flor@2x.png",
-      "width": "180",
-      "blockClass":"login-icon"
-    }
-  },
-  "login#dektop-login-1": {
+"image#desktop-login": {
+  "props": {
+    "src": "/arquivos/flor@2x.png",
+    "alt":"icone de login",
+    "maxHeight": 24,
+    "blockClass":"login-icon"
+  }
+},
+"login#dektop-login-1": {
     "props": {
       "iconLabel":"",
       "emailAndPasswordTitle": "LOG-IN",
@@ -124,12 +117,11 @@
     }
   },
   //logo sacola
-  "logo#desktop-bag": {
+"image#desktop-bag": {
     "props": {
-      "title": "LogoBag",
-      "href": "/",
-      "url": "/arquivos/sacola@2x.png",
-      "width": "180",
+      "src": "/arquivos/sacola@2x.png",
+      "alt":"icone de login",
+      "maxHeight": 24,
       "blockClass":"bag-icon"
     }
   },
