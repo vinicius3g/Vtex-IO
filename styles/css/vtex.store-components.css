@@ -53,14 +53,17 @@
   margin-top: 10%;
 }
 
-.newsletter {
-  background-color: #03054E;
-  max-width: 1528px;
-  margin: 0 auto;
-}
+.imageElement--image-01{
+  width: 500px;
+  height: 736px;
+  margin-left: 10%;
+  margin-right: 10px;
 
-.newsletter .container {
-  padding: 60px 10px;
+}
+.imageElement--image-02{
+  width: 500px;
+  height: 736px;
+  margin-right: 10%;
 }
 
 .label {
