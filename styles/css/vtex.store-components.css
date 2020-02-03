@@ -1,11 +1,3 @@
-/* .notificationBarContainer {
-  background-color: #000;
-  color: #fff;
-  font-size: 13px;
-  text-decoration: none;
-  font-family: Montserrat;
-  line-height: 1.38;
-} */
 
 .searchBarContainer {
   max-width: 265px;
@@ -14,18 +6,64 @@
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  background-color: #E6F1E6;
+  background-color: #fff;
   padding: 0px;
 }
 
-.newsletter {
-  background-color: #03054E;
-  max-width: 1528px;
-  margin: 0 auto;
+.infoCardTextContainer--info-card-home{
+  align-items: flex-start;
 }
 
-.newsletter .container {
-  padding: 60px 10px;
+.infoCardHeadline--info-card-home{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: left;
+  color: #000;
+}
+
+.infoCardCallActionContainer :global(.vtex-button){
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+:global(.vtex-button__label){
+  color: #000;
+}
+
+.infoCardCallActionContainer:hover :global(.vtex-button){
+  background-color: #000;
+}
+
+.infoCardCallActionContainer:hover :global(.vtex-button__label){
+  color: #fff;
+}
+
+.infoCardSubhead--info-card-home{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+}
+
+.infoCardImage--info-card-home{
+  width: 600px;
+  height: 425px;
+  margin-left: 16%;
+  margin-top: 10%;
+}
+
+.imageElement--image-01{
+  width: 500px;
+  height: 736px;
+  margin-left: 10%;
+  margin-right: 10px;
+
+}
+.imageElement--image-02{
+  width: 500px;
+  height: 736px;
+  margin-right: 10%;
 }
 
 .label {
@@ -185,7 +223,7 @@
   }
 
   .infoCardContainer--info-card-home .infoCardTextContainer {
-    width: 30%;
+    width: 45%;
   }
 
   .infoCardContainer--info-card-home .infoCardImageContainer {

@@ -1,0 +1,8 @@
+.paginationDotsContainer,
+.sliderArrows{
+    display: none;
+}
+
+.slideChildrenContainer{
+    padding: 20px;
+}
