@@ -2,14 +2,14 @@
   "store.home": {
     "blocks": [
       "carousel#home",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      // "flex-layout.row#deals",
-      "shelf#home",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "rich-text#home-menu",
+      "shelf#home",
+      "flex-layout.row#images",
+      "rich-text#siga",
+      "slider-layout#home",
+      "rich-text#head",
+      "rich-text#about"
     ]
   },
 
@@ -32,19 +32,44 @@
     }
   },
 
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "/arquivos/imagem@2x.png",
+      "headline": "SELEÇÃO EXCLUSIVA",
+      "subhead":"Clique para conferir todos os produtos que separamos especialmente pra você.",
+      "callToActionText": "CONFIRA",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#home-menu":{
+    "props":{
+      "text": "**DESCUBRA**",
+      "blockClass": "middle-menu" 
+    }
+  },
+  
   "shelf#home": {
     "blocks": ["product-summary.shelf"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
-      "paginationDotsVisibility": "desktopOnly",
+      "paginationDotsVisibility": "hidden",
       "skusFilter": "FIRST_AVAILABLE",
+      "navigationStep":3,
+      // "hideUnavailableItems": true,
       "productList": {
+        "gap":"ph7",
         "maxItems": 10,
-        "itemsPerPage": 5,
+        "itemsPerPage": 4,
         "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "Top sellers"
+        "titleText": ""
       }
     }
   },
@@ -54,8 +79,8 @@
       "isOneClickBuy": false,
       "showBadge": true,
       "badgeText": "OFF",
-      "buyButtonText": "Add to cart",
-      "displayBuyButton": "displayButtonAlways",
+      // "buyButtonText": "Add to cart",
+      // "displayBuyButton": "displayButtonAlways",
       "showCollections": false,
       "showListPrice": true,
       "labelSellingPrice": "To",
@@ -71,31 +96,102 @@
     }
   },
 
-  "info-card#home": {
+  "flex-layout.row#images":{
+    "children":[
+    "image#prod-1",
+    "image#prod-2"
+  ],
+  "props":{
+    "blockClass":"images02"
+    }
+  },
+  "image#prod-1": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+      "src": "/arquivos/agrupar-7@2x.png",
+      "blockClass":"image-01"
+    }
+  },
+  "image#prod-2": {
+    "props": {
+      "src": "/arquivos/imagem-2@2x.png",
+      "blockClass":"image-02"
+    }
+  },
+  "rich-text#siga":{
+    "props":{
+      "text": "**SIGA @ERVADOCE**",
+      "blockClass": "siga-head" 
     }
   },
 
-  "rich-text#question": {
+  "slider-layout#home": {
+    "children": [
+      "image#card-1", 
+      "image#card-2",
+      "image#card-3", 
+      "image#card-4",
+      "image#card-5",
+      "image#card-6"
+    
+    ],
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": false,
+        "itemsPerPage":5,
+        "showNavigationArrows":"never",
+        "blockClass":"sliderimages"
+      }
+    }
+  },
+  "image#card-1": {
+    "props": {
+      "src": "/arquivos/camada-42@2x.jpg",
+      "blockClass":"slider"
+    }
+  },
+  "image#card-2": {
+    "props": {
+      "src": "/arquivos/camada-43@2x.jpg",
+      "blockClass":"slider"
+    }
+  },
+  "image#card-3": {
+    "props": {
+      "src": "/arquivos/camada-44@2x.jpg",
+      "blockClass":"slider"
+    }
+  },
+  "image#card-4": {
+    "props": {
+      "src": "/arquivos/camada-45@2x.jpg",
+      "blockClass":"slider"
+    }
+  },
+  "image#card-5": {
+    "props": {
+      "src": "/arquivos/camada-54@2x.jpg",
+      "blockClass":"slider"
+    }
+  },
+  "image#card-6": {
+    "props": {
+      "src": "/arquivos/camada-56@2x.jpg",
+      "blockClass":"slider"
     }
   },
 
-  "rich-text#link": {
+  "rich-text#head": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "text": "A MARCA",
+      "blockClass": "heading"
+    }
+  },
+
+  "rich-text#about": {
+    "props": {
+      "text": "Criada em 1984, a Ervadoce nasceu em São Paulo com o desejo de trazer moda clássica e elegante para a mulher brasileira. \n O nome da marca foi escolhido por ser delicado, feminino e natural. A Ervadoce tem como principal objetivo trazer conforto e elegância para as suas\n clientes, tanto nas peças como no ambiente de loja, por isso preza por um atendimento especial como o de uma boutique.  A primeira loja foi inaugurada\n no shopping Center Norte, no ano de 1984 e hoje em dia a Ervadoce conta com 8 lojas nos principais shoppings da capital paulistana. Ao longo da sua\n história, a marca traz em suas coleções o bom gosto e a sofisticação aliados às tendências de moda, desenvolvendo, assim, produtos com qualidade,\n conforto e que podem ser usados desde o ambiente de trabalho até o dia a dia.",
+      "blockClass": "text-about"
     }
   }
 }
