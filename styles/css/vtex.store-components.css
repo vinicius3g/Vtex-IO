@@ -73,17 +73,24 @@
 .logoImage--logo-header{
   width: 140px;
   height: 23px;
-  margin-left: 17%;
+  margin-left: 62%;
 }
 
-.logoImage--search-icon{
+.imageElement--logo-search{
   width: 22px;
   height: 22px;
+  margin-right: 2%;
 }
 
-.logoImage--login-icon{
+.imageElement--login-icon{
   width: 23px;
   height: 23px;
+}
+
+.imageElement--bag-icon{
+  width: 18px;
+  height: 23px;
+  margin-right: 10%;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group){
@@ -91,15 +98,6 @@
   border-bottom: 1px solid #000;
   width: 316px;
   border-radius: 0;
-}
-.logoImage--bag-icon{
-  width: 18px;
-  height: 23px;
-}
-
-.logoImage--bag-icon{
-  width: 18px;
-  height: 23px;
 }
 
 .logoImage--logo-fecebook{
