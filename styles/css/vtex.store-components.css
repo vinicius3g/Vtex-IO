@@ -73,17 +73,24 @@
 .logoImage--logo-header{
   width: 140px;
   height: 23px;
-  margin-left: 17%;
+  margin-left: 62%;
 }
 
-.logoImage--search-icon{
+.imageElement--logo-search{
   width: 22px;
   height: 22px;
+  margin-right: 2%;
 }
 
-.logoImage--login-icon{
+.imageElement--login-icon{
   width: 23px;
   height: 23px;
+}
+
+.imageElement--bag-icon{
+  width: 18px;
+  height: 23px;
+  margin-right: 10%;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group){
@@ -92,57 +99,48 @@
   width: 316px;
   border-radius: 0;
 }
-.logoImage--bag-icon{
-  width: 18px;
-  height: 23px;
-}
 
-.logoImage--bag-icon{
-  width: 18px;
-  height: 23px;
-}
-
-.imageElement--logo-fecebook{
+.logoImage--logo-fecebook{
   width: 11px;
   height: 21px;
 }
 
-.imageElement--logo-instagram{
+.logoImage--logo-instagram{
   width: 21px;
   height: 21px;
 }
 
-.imageElement--logo-pintrest{
+.logoImage--logo-pintrest{
   width: 21px;
   height: 21px;
 }
 
-.imageElement--logo-spotify{
+.logoImage--logo-spotify{
   width: 44px;
   height: 33px;
 }
 
-.imageElement--visa-card-footer{
+.logoImage--visa-card-footer{
   width: 50px;
   height: 16px;
 }
 
-.imageElement--master-card-footer{
+.logoImage--master-card-footer{
   width: 32px;
   height: 26px;
 }
 
-.imageElement--elo-card-footer{
+.logoImage--elo-card-footer{
   width: 39px;
   height: 20px;
 }
 
-.imageElement--diners-card-footer{
+.logoImage--diners-card-footer{
   width: 29px;
   height: 25px;
 }
 
-.imageElement--american-card-footer{
+.logoImage--american-card-footer{
   width: 27px;
   height: 26px;
 }

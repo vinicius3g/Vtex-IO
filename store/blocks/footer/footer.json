@@ -32,7 +32,7 @@
     ],
     "props":{
       "paddingTop":"7",
-      "blockClass":"footer-input"
+      "blockClass":"footer-1"
     }
   },
   "search-bar#footer-search":{
@@ -45,50 +45,59 @@
   },
   "flex-layout.row#logo-social-media":{
     "children":[
-      "image#social-media-facebook",
-      "image#social-media-instagram",
-      "image#social-media-pintrest",
-      "image#social-media-spotfy"
+      "logo#social-media-facebook",
+      "logo#social-media-instagram",
+      "logo#social-media-pintrest",
+      "logo#social-media-spotfy"
     ],
     "props":{
       "blockClass":"social-midias-footer"
     }
   },
-  "image#social-media-facebook": {
+  "logo#social-media-facebook": {
     "props": {
-      "src": "/arquivos/facebook@2x.png",
-      "alt":"logo-facebook",
-      "maxHeight": 24,
+      "id":"logo-fecebook",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/facebook@2x.png",
+      "width": "180",
       "blockClass":"logo-fecebook"
     }
   },
-  "image#social-media-instagram": {
+  "logo#social-media-instagram": {
     "props": {
-      "src": "/arquivos/instagram@2x.png",
-      "alt":"logo-instagram",
-      "maxHeight": 24,
+      "id":"logo-instagram",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/instagram@2x.png",
+      "width": "180",
       "blockClass":"logo-instagram"
     }
   },
-  "image#social-media-pintrest": {
+  "logo#social-media-pintrest": {
     "props": {
-      "src": "/arquivos/580-b-57-fcd-9996-e-24-bc-43-c-52-e@2x.png",
-      "alt":"logo-pintrest",
-      "maxHeight": 24,
+      "id":"logo-pintrest",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/580-b-57-fcd-9996-e-24-bc-43-c-52-e@2x.png",
+      "width": "180",
       "blockClass":"logo-pintrest"
     }
   },
-  "image#social-media-spotfy": {
+  "logo#social-media-spotfy": {
     "props": {
-      "src": "/arquivos/camada-2@3x.png",
-      "alt":"logo-spotiy",
-      "maxHeight": 24,
+      "id":"logo-spotify",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/camada-2@3x.png",
+      "width": "180",
       "blockClass":"logo-spotify"
     }
   },
+
   "flex-layout.row#footer-3-desktop": {
     "children": [
-      "menu#Products"
+      "vtex.menu@2.x:menu#Products"
     ],
     "props": {
       "blockClass": "menu-footer",
@@ -98,53 +107,59 @@
   },
   "flex-layout.row#footer-4-desktop": {
     "children": [
-      "image#cards-footer-1",
-      "image#cards-footer-2",
-      "image#cards-footer-3",
-      "image#cards-footer-4",
-      "image#cards-footer-5"
+      "logo#cards-footer-1",
+      "logo#cards-footer-2",
+      "logo#cards-footer-3",
+      "logo#cards-footer-4",
+      "logo#cards-footer-5"
     ],
     "props": {
       "blockClass": "payment-methods"
     }
   },
-  "image#cards-footer-1": {
+  "logo#cards-footer-1": {
     "props": {
-      "src": "/arquivos/icone-visa@2x.png",
-      "alt":"logo-visa-card",
-      "maxHeight": 24,
+      "id":"visa-card",
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-visa@2x.png",
+      "width": "180",
       "blockClass":"visa-card-footer"
     }
   },
-  "image#cards-footer-2": {
+  "logo#cards-footer-2": {
     "props": {
-      "src": "/arquivos/icone-master@2x.png",
-      "alt":"logo-master-card",
-      "maxHeight": 24,
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-master@2x.png",
+      "width": "180",
       "blockClass":"master-card-footer"
     }
   },
-  "image#cards-footer-3": {
+  "logo#cards-footer-3": {
     "props": {
-      "src": "/arquivos/icone-elo@2x.png",
-      "alt":"logo-elo-card",
-      "maxHeight": 24,
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-elo@2x.png",
+      "width": "180",
       "blockClass":"elo-card-footer"
     }
   },
-  "image#cards-footer-4": {
+  "logo#cards-footer-4": {
     "props": {
-      "src": "/arquivos/icone-diners@2x.png",
-      "alt":"logo-diners-card",
-      "maxHeight": 24,
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-diners@2x.png",
+      "width": "180",
       "blockClass":"diners-card-footer"
     }
   },
-  "image#cards-footer-5": {
+  "logo#cards-footer-5": {
     "props": {
-      "src": "/arquivos/icone-american@2x.png",
-      "alt":"logo-american-card",
-      "maxHeight": 24,
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/icone-american@2x.png",
+      "width": "180",
       "blockClass":"american-card-footer"
     }
   },
