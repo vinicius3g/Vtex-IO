@@ -2,11 +2,9 @@
   "store.home": {
     "blocks": [
       "carousel#home",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      // "flex-layout.row#deals",
-      "shelf#home",
       "info-card#home",
+      "rich-text#home-menu",
+      "shelf#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -29,6 +27,28 @@
       "height": 720,
       "showArrows": true,
       "showDots": true
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "/arquivos/imagem@2x.png",
+      "headline": "SELEÇÃO EXCLUSIVA",
+      "subhead":"Clique para conferir todos os produtos que separamos especialmente pra você.",
+      "callToActionText": "CONFIRA",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#home-menu":{
+    "props":{
+      "text": "**DESCUBRA**",
+      "blockClass": "middle-menu" 
     }
   },
 
@@ -68,20 +88,6 @@
         "showSku": true,
         "showProductReference": true
       }
-    }
-  },
-
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
     }
   },
 
