@@ -1,5 +1,5 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  "menu#Products": {
     "props": {
       "orientation": "horizontal"
     },
