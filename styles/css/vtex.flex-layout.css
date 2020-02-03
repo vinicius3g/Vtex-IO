@@ -37,37 +37,25 @@
 }
 .flexRowContent--footer-1 {
   align-content: center;
-  justify-content: center;
 }
 .flexRow--menu-footer{
   display: flex;
 }
 .stretchChildrenWidth {
-  justify-content: center;
-}
-
-.flexRowContent--payment-methods{
-  margin-right: 200px;
+  justify-content: flex-end;
 }
 
 .flexRow--payment-methods{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
-}
-.flexRow--social-midias-footer{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  margin: 0 auto; 
+  display: flex
 }
 
-.flexRowContent--footer-input{
+.flexRowContent--social-midias-footer{
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  width: 50%;
+  width: 30%;
+  margin-left: 10%;
+  padding-top: 16px;
 }
 :global(.vtex-menu-2-x-styledLink){
   font-family: 'Montserrat',sans-serif;
