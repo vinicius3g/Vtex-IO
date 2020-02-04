@@ -102,7 +102,7 @@
     "image#prod-2"
   ],
   "props":{
-    "blockClass":"images02"
+    "blockClass":"banners"
     }
   },
   "image#prod-1": {
