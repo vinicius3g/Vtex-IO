@@ -46,6 +46,7 @@
   letter-spacing: 2px;
   text-align: center;
   color: #000;
+  padding-top: 53px;
 }
 
 .container--text-about {
@@ -55,7 +56,8 @@
   color: #000;
   text-align: center;
   margin: 0 auto;
-  justify-content: center
+  justify-content: center;
+  padding-bottom: 53px;
 }
 
 .container--footer-1{
