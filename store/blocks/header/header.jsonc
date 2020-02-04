@@ -66,10 +66,9 @@
       "image#desktop-search",
       "image#desktop-login",
       "login#dektop-login-1",
-      "image#desktop-bag",
-      "locale-switcher"
+      "locale-switcher",
       // "login",
-      // "minicart.v2"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -107,22 +106,12 @@
 },
 "login#dektop-login-1": {
     "props": {
-      "showIconProfile":true,
       "emailAndPasswordTitle": "LOG-IN",
       "accessCodeTitle": "Acess Code LOG-IN",
       "emailPraceholder": "e-mail",
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,
       "blockClass":"btn-login"
-    }
-  },
-  //logo sacola
-"image#desktop-bag": {
-    "props": {
-      "src": "/arquivos/sacola@2x.png",
-      "alt":"icone de login",
-      "maxHeight": 24,
-      "blockClass":"bag-icon"
     }
   },
   //fim menu search

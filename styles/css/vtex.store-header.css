@@ -7,10 +7,6 @@
   font-size: 14px;
 }
 
-.headerRowContainer :global(.vtex-menu-2-x-menuContainerNav) {
-  margin-left: 10%;
-}
-
 .headerRow--main-header .headerRowBackground {
   background-color: #F0F0F0;
 }
