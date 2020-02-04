@@ -107,9 +107,9 @@
 },
 "login#dektop-login-1": {
     "props": {
-      "iconLabel":"",
+      "showIconProfile":true,
       "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Faça seu login ou cadastre-se",
+      "accessCodeTitle": "Acess Code LOG-IN",
       "emailPraceholder": "e-mail",
       "passwordPlaceholder": "password",
       "showPasswordVerificationIntoTooltip": true,

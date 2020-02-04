@@ -1,8 +1,10 @@
-:global(.vtex-login-2-x-label){
+.label{
+    display: none;
+} 
+/* .profileIcon{
     visibility: hidden;
 }
-:global(.vtex-login-2-x-label)::before{
+:global(.vtex-button)::after{
     visibility: visible;
-    content: "";
-    background: url("/arquivos/flor@2x.png")no-repeat;
-}
+    content: url("/arquivos/flor@2x.png");
+} */
