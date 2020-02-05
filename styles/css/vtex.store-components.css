@@ -55,15 +55,12 @@
 
 .imageElement--image-01{
   width: 500px;
-  height: 736px;
-  margin-left: 10%;
-  margin-right: 10px;
-
+  height: auto;
 }
+
 .imageElement--image-02{
   width: 500px;
-  height: 736px;
-  margin-right: 10%;
+  height: auto;
 }
 
 .label {

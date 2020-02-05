@@ -45,6 +45,14 @@
   justify-content: flex-end;
 }
 
+.flexRow--banners{
+  display: flex;
+}
+
+.flexRowContent--banners :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+  padding: 10px;
+}
+
 .flexRow--payment-methods{
   margin: 0 auto; 
   display: flex

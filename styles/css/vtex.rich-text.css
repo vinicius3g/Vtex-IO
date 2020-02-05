@@ -46,17 +46,18 @@
   letter-spacing: 2px;
   text-align: center;
   color: #000;
+  padding-top: 53px;
 }
 
 .container--text-about {
-  width: 1067px;
   font-size: 14px;
   font-family: 'Montserrat',sans-serif;
   line-height: 1.43;
   color: #000;
   text-align: center;
   margin: 0 auto;
-  justify-content: center
+  justify-content: center;
+  padding-bottom: 53px;
 }
 
 .container--footer-1{
