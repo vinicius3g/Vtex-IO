@@ -55,15 +55,12 @@
 
 .imageElement--image-01{
   width: 500px;
-  height: 736px;
-  margin-left: 10%;
-  margin-right: 10px;
-
+  height: auto;
 }
+
 .imageElement--image-02{
   width: 500px;
-  height: 736px;
-  margin-right: 10%;
+  height: auto;
 }
 
 .label {
@@ -111,7 +108,6 @@
 .logoImage--logo-header{
   width: 140px;
   height: 23px;
-  margin-left: 62%;
 }
 
 .imageElement--logo-search{
@@ -123,12 +119,6 @@
 .imageElement--login-icon{
   width: 23px;
   height: 23px;
-}
-
-.imageElement--bag-icon{
-  width: 18px;
-  height: 23px;
-  margin-right: 10%;
 }
 
 .searchBarContainer :global(.vtex-input-prefix__group){
