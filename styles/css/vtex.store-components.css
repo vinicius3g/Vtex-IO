@@ -116,11 +116,6 @@
   margin-right: 2%;
 }
 
-.imageElement--login-icon{
-  width: 23px;
-  height: 23px;
-}
-
 .searchBarContainer :global(.vtex-input-prefix__group){
   border: none;
   border-bottom: 1px solid #000;

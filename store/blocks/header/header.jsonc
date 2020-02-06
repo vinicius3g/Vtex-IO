@@ -64,10 +64,8 @@
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
       "image#desktop-search",
-      "image#desktop-login",
-      "login#dektop-login-1",
+      "login#dektop-login",
       "locale-switcher",
-      // "login",
       "minicart.v2"
     ],
     "props": {
@@ -95,16 +93,8 @@
       "blockClass":"logo-search"
     }
   },
-//logo login
-"image#desktop-login": {
-  "props": {
-    "src": "/arquivos/flor@2x.png",
-    "alt":"icone de login",
-    "maxHeight": 24,
-    "blockClass":"login-icon"
-  }
-},
-"login#dektop-login-1": {
+  // login
+"login#dektop-login": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
       "accessCodeTitle": "Acess Code LOG-IN",
