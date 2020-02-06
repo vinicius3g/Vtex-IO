@@ -190,6 +190,11 @@
   width: 22px;
 }
 
+.imageElement--imagem-menu-product{
+  width: 310px;
+  height: 232px;
+}
+
 .searchBarIcon--footer-input::before{
   visibility: visible;
   content: "";
