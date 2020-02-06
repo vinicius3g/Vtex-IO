@@ -2,7 +2,6 @@
   "header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
-  //nao entendi ainda
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
@@ -16,12 +15,12 @@
     ]
   },
 // ainda nao sei 
-  "header-row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
+  // "header-row#1-desktop": {
+  //   "children": ["telemarketing"],
+  //   "props": {
+  //     "fullWidth": true
+  //   }
+  // },
 // começo do notification.bar
   "header-row#2-desktop": {
     "children": [
@@ -43,17 +42,17 @@
   },
 //fim notification.bar
 //começo do menu  com about etc
-  "header-row#3-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "header-spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ],
-    "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
-    }
-  },
+  // "header-row#3-desktop": {
+  //   "children": [
+  //     "vtex.menu@2.x:menu#websites",
+  //     "header-spacer",
+  //     "vtex.menu@2.x:menu#institutional"
+  //   ],
+  //   "props": {
+  //     "blockClass": "menu-link",
+  //     "inverted": "true"
+  //   }
+  // },
   //começo menu do logo e search
   "header-row#4-desktop": {
     ///definiçao dos filhos desse block
@@ -61,7 +60,7 @@
     "children": [
       "logo#desktop",
       "header-spacer",
-      "vtex.menu@2.x:menu#category-menu",
+      "menu#category-menu",
       "header-spacer",
       "image#desktop-search",
       "login#dektop-login",
@@ -144,7 +143,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "url": "/arquivos/logo-preta@3x.png",
       "width": "70"
     }
   },

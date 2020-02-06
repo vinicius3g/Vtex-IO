@@ -1,5 +1,5 @@
 {
-  "vtex.menu@2.x:menu#category-menu": {
+  "menu#category-menu": {
     "children": [
       "menu-item#category-colection",
       "menu-item#category-clothes",
@@ -9,6 +9,7 @@
       "menu-item#category-sales"
     ]
   },
+
   "menu-item#category-colection": {
     "props": {
       "id": "menu-item-category-colection",
@@ -22,74 +23,9 @@
         "tagTitle": "Coleção",
         "text": "Coleção"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-colection"
-    ]
-  },
-  "vtex.menu@2.x:submenu#category-colection": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#category-colection"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-colection": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-colection-clothing",
-      "menu-item#category-colection-accessories",
-      "menu-item#category-colection-eyeglasses"
-    ]
-  },
-  "menu-item#category-colection-clothing": {
-    "props": {
-      "id": "menu-item-category-colection-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/colection---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
     }
   },
-  "menu-item#category-colection-accessories": {
-    "props": {
-      "id": "menu-item-category-colection-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/colection---accessories/accessories/",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-colection-eyeglasses": {
-    "props": {
-      "id": "menu-item-category-colection-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/colection---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  },
+
   "menu-item#category-clothes": {
     "props": {
       "id": "menu-item-category-clothes",
@@ -103,8 +39,420 @@
         "tagTitle": "Roupas",
         "text": "Roupas"
       }
+    },
+      "blocks":[
+        "submenu#category-clothes"
+      ]
+  },
+  "submenu#category-clothes": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "menu#category-category",
+      "menu#category-tendences",
+      "menu#category-campanha"
+    ]
+  },
+
+  "menu#category-category": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-colection-categoria",
+      "menu-item#category-colection-blusa",
+      "menu-item#category-colection-camisa",
+      "menu-item#category-colection-vestido",
+      "menu-item#category-colection-calça",
+      "menu-item#category-colection-bermuda",
+      "menu-item#category-colection-saia",
+      "menu-item#category-colection-tricot",
+      "menu-item#category-colection-casaco",
+      "menu-item#category-colection-blazer"
+
+    ]
+  },
+
+  "menu-item#category-colection-categoria": {
+    "props": {
+      "blockClass":"categoria-title",
+      "id": "menu-item-category-category",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Categoria",
+        "text": "Categoria"
+      }
     }
   },
+  "menu-item#category-colection-blusa": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Blusa",
+        "text": "Blusa"
+      }
+    }
+  },
+
+  "menu-item#category-colection-camisa": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Camisa",
+        "text": "Camisa"
+      }
+    }
+  },
+  "menu-item#category-colection-vestido": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Vestido",
+        "text": "Vestido"
+      }
+    }
+  },
+  "menu-item#category-colection-calça": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Calça",
+        "text": "Calça"
+      }
+    }
+  },
+  "menu-item#category-colection-bermuda": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Bermuda",
+        "text": "Bermuda"
+      }
+    }
+  },
+
+  "menu-item#category-colection-saia": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Saia",
+        "text": "Saia"
+      }
+    }
+  },
+
+    "menu-item#category-colection-tricot": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Tricot",
+        "text": "Tricot"
+      }
+    }
+  },
+
+  "menu-item#category-colection-casaco": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Casaco",
+        "text": "Casaco"
+      }
+    }
+  },
+
+  "menu-item#category-colection-blazer": {
+    "props": {
+      "blockClass": "menu-item-categoria",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Blazer",
+        "text": "Blazer"
+      }
+    }
+  },
+  "menu#category-tendences":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-tendences-verniz",
+      "menu-item#category-tendences-balada",
+      "menu-item#category-tendences-brilho",
+      "menu-item#category-tendences-xadrez",
+      "menu-item#category-tendences-babados",
+      "menu-item#category-tendences-leather",
+      "menu-item#category-tendences-alfaiataria",
+      "menu-item#category-tendences-camisaria"
+    ]
+  },
+  "menu-item#category-tendences-verniz":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Verniz e Vinil",
+        "text": "Verniz e Vinil"
+      }
+    }
+  },
+  "menu-item#category-tendences-balada":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Balada",
+        "text": "Balada"
+      }
+    }
+  },
+  "menu-item#category-tendences-brilho":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Brilho e Plissato",
+        "text": "Brilho e Plissato"
+      }
+    }
+  },
+  "menu-item#category-tendences-xadrez":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Xadrez",
+        "text": "Xadrez"
+      }
+    }
+  },
+  "menu-item#category-tendences-babados":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Babados",
+        "text": "Babados"
+      }
+    }
+  },
+  "menu-item#category-tendences-leather":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Leather",
+        "text": "Leather"
+      }
+    }
+  },
+  "menu-item#category-tendences-alfaiataria":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "alfaiataria",
+        "text": "Alfaiataria"
+      }
+    }
+  },
+  "menu-item#category-tendences-camisaria":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Camisaria",
+        "text": "Camisaria"
+      }
+    }
+  },
+  "menu#category-campanha":{
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-campanha-novacolecao",
+      "menu-item#category-campanha-inverno2018",
+      "menu-item#category-campanha-verao2018",
+      "menu-item#category-campanha-bossanova",
+      "menu-item#category-campanha-galeria"
+    ]
+  },
+  "menu-item#category-campanha-novacolecao":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Nova Coleção",
+        "text": "Nova Coleção"
+      }
+    }
+  },
+  "menu-item#category-campanha-inverno2018":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Alto Inverno 2018",
+        "text": "Alto Inverno 2018"
+      }
+    }
+  },
+  "menu-item#category-campanha-verao2018":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Alto Verão 2018",
+        "text": "Alto Verão 2018"
+      }
+    }
+  },
+  "menu-item#category-campanha-bossanova":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Bossa Nova",
+        "text": "Bossa Nova"
+      }
+    }
+  },
+  "menu-item#category-campanha-galeria":{
+    "props": {
+      "id": "menu-item-custom-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Galeria",
+        "text": "Galeria"
+      }
+    }
+  },
+
   "menu-item#category-acessorios": {
     "props": {
       "id": "menu-item-custom-sale",
@@ -120,10 +468,10 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#acessorios"
+      "submenu#acessorios"
     ]
   },
-  "vtex.menu@2.x:submenu#acessorios": {
+  "submenu#acessorios": {
     "props": {
       "width": "100%"
     },
@@ -139,7 +487,7 @@
   },
   "flex-layout.col#menu-acessorios-1": {
     "children": [
-      "vtex.menu@2.x:menu#acessorios"
+      "menu#acessorios"
     ]
   },
   "flex-layout.col#menu-acessorios-2": {
@@ -147,7 +495,7 @@
       "info-card#home"
     ]
   },
-  "vtex.menu@2.x:menu#acessorios": {
+  "menu#acessorios": {
     "props": {
       "orientation": "vertical"
     },
